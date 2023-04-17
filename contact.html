@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rebels Kickboxing</title>
+<!-- Link to the external CSS file -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- Link to the external JavaScript file -->
+<script src="scripts.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store.html">Online Store</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or would like more information about our classes and programs, please feel free to contact us. We'd be happy to assist you!</p>
+
+    <h2>Phone</h2>
+    <p>(509) 362-5228</p>   
+    <h2>Send Us a Message</h2>
+    <form action="submit_contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+</body>
+</html>
