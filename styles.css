@@ -7,15 +7,18 @@ body {
     color: #FFFFFF; /* Text color for better visibility */
     text-align: center;
 }
-
 /* Front Page Background Image */
 .front-page {
-    background-image: url("r1.jpg");
-    background-size: cover;
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url("rebels logo.png");
+    background-size: 40%; /* Ensures the image covers the entire element */
     background-position: center center;
     background-repeat: no-repeat;
 }
-
 /* Navigation */
 nav ul {
     list-style-type: none;
