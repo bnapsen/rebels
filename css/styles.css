@@ -1,0 +1,156 @@
+
+* {
+    margin:0%;
+    position:relative;
+
+    font-family: 'Bahnschrift','Courier New', Courier, monospace;
+}
+body {
+    min-height: 100vh;
+    min-width:100vw;
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: #252020; /* Background color for all pages */
+    color: #FFFFFF; /* Text color for better visibility */
+    text-align: center;
+}
+
+p {
+    padding: 0 20%;
+    font-size: 25px;
+}
+
+h1,h2 {
+    margin:20px;
+    font-family: 'algerian','Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+#index {
+    overflow: hidden;
+}
+main {
+    height: 100vh;
+}
+
+/* palettes */
+.palette-light {
+    background-color: #FFFFFF;
+}
+.palette-dark {
+    background-color: #252020;
+}
+.palette-red {
+    background-color: #CC0044;
+    border: #000000;
+    
+}
+
+#index .top,#index .bottom,#index .middle {
+    position: absolute;
+    left: 0%;
+    width:90%;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#index .top,  #index .bottom {
+    height: 25%;
+}
+#index .middle {
+    height: 40%;
+    border-width: 10px;
+    border-style:solid;
+    border-radius: 15px;
+    text-shadow: 5px 5px 0 #000000;
+}
+
+#index .top {
+    top:0vh;
+    border-top-right-radius: 0;
+    
+}
+#index .bottom {
+    bottom: 0vh;
+    
+}
+#index .middle {
+    display: flex;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+}
+
+#index main img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#index #left {
+    position:absolute;
+    left:0%;
+    min-height:100vh;
+    width:60%;
+}
+
+#index #right {
+    position: absolute;
+    right: 0px;
+    min-height: 100vh;
+    width:40%;
+}
+
+/* Navigation */
+ul {
+    top:10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    background-color: #CC0044;
+    height: 40px;
+}
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffee99; /* Text color for better visibility */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Container */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+table {
+    margin: 30px auto;
+}
+td {
+    padding: 3px 15px;
+}
