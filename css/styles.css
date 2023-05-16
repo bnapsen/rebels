@@ -1,37 +1,41 @@
 
+:root {
+    --main-bg-color: #7a7a7a;
+    --frame-color: #cccccc;
+    --frame-outline: #313C6C;
+}
 * {
     margin:0%;
     position:relative;
-
     font-family: 'Bahnschrift','Courier New', Courier, monospace;
 }
 body {
     min-height: 100vh;
     min-width:100vw;
     font-family: Arial, sans-serif;
+    font-weight: bold;
+
     margin: 0%;
     padding: 0%;
-    background-color: #252020; /* Background color for all pages */
-    color: #FFFFFF; /* Text color for better visibility */
+    background-color: var(--main-bg-color); /* Background color for all pages */
+    color: #000; /* Text color for better visibility */
     text-align: center;
-}
-
-p {
-    padding: 0 20%;
-    font-size: 25px;
-}
-
-h1,h2 {
-    margin:20px;
-    font-family: 'algerian','Courier New', Courier, monospace;
-    font-size: 40px;
+    overflow: hidden;
 }
 
 #index {
     overflow: hidden;
+    color:#FFFFFF;
 }
 main {
-    height: 100vh;
+    position:absolute;
+    top:0;
+    width:100vw;
+    min-height: 100vh;
+}
+
+section {
+    padding: 0 10%;
 }
 
 /* palettes */
@@ -44,7 +48,6 @@ main {
 .palette-red {
     background-color: #CC0044;
     border: #000000;
-    
 }
 
 #index .top,#index .bottom,#index .middle {
@@ -105,22 +108,39 @@ main {
     width:40%;
 }
 
-/* Navigation */
-ul {
-    top:10px;
-    list-style-type: none;
-    padding: 0;
+br#extrastart {
+    margin:1%;
 }
+/* Navigation */
 
 header {
-    background-color: #CC0044;
-    height: 40px;
+    background-color: var(--frame-outline);
+    height: 7vh;
+}
+header nav {
+    top:50%;
+    transform: translateY(-50%);
 }
 /* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFFFFF;
     padding: 10px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1,h2 {
+    margin:20px;
+    font-family: 'algerian','Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 li {
@@ -131,21 +151,13 @@ li {
 
 a {
     text-decoration: none;
-    color: #ffee99; /* Text color for better visibility */
+    color: black; /* Text color for better visibility */
+    font-size: 28px;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Logo Container */
-.logo-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 table {

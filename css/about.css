@@ -1,0 +1,61 @@
+div#textsec {
+    position: absolute;
+    background-color: var(--frame-color);
+
+    outline: var(--frame-outline) solid 5px;
+
+    border-radius: 10px;
+
+    margin: 0 3%;
+    
+    width:45%;
+    height: 85%;
+    left:0;
+
+    color: black;
+
+    top:50%;
+    transform: translateY(-45%);
+
+    background-image: url("../images/rebels_logo_2.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-position: 40% 20%;
+}
+div#imagesec {
+    position:absolute;
+
+
+    right:0;
+    top:50%;
+
+    width:50%;
+    transform: translateY(-45%);
+}
+#imagesec #subsec {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+#imagesec #subsec img {
+    width: 30%;
+    margin:5px;
+
+    border: 10px solid var(--frame-outline);
+    outline: 2px white solid;
+    box-shadow: 15px 20px black;
+}
+
+#imagesec #subsec img#b {
+    left:45%;
+    width:40%;
+}
+#imagesec #subsec img#a {
+    left:5%;
+    top:10vh;
+}
+#imagesec #subsec img#c {
+    bottom:20vh;
+}
