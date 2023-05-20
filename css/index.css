@@ -3,7 +3,7 @@ main img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
-    width: max(50%, 500px);
+    width: max(45%, 450px);
 }
 body {
     background-color: var(--frame-color);
