@@ -1,5 +1,7 @@
 // scripts.js
 
+/* this function is annoying
+
 document.addEventListener('DOMContentLoaded', () => {
     setGreetingMessage();
 });
@@ -23,3 +25,5 @@ function setGreetingMessage() {
     const welcomeSection = document.querySelector('main > section');
     welcomeSection.appendChild(greetingElement);
 }
+
+*/

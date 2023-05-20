@@ -4,7 +4,6 @@
     --frame-color: #cccccc;
     --frame-outline: #313C6C;
     scrollbar-color: #fff #112255;
-    scrollbar-width: thin !important;
 }
 * {
     margin:0%;
@@ -17,13 +16,12 @@ body {
 
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: max(1vw,8px);
 
     margin: 0%;
     padding: 0%;
     background-color: var(--main-bg-color); /* Background color for all pages */
     color: #000; /* Text color for better visibility */
-    text-align: center;
     overflow: hidden;
 }
 
@@ -58,6 +56,7 @@ br#extrastart {
 header {
     background-color: var(--frame-outline);
     height: 7vh;
+    text-align: center;
 }
 header nav {
     top:50%;
@@ -78,7 +77,8 @@ p {
 h1,h2 {
     margin:20px;
     font-family: 'algerian','Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 3em;
+    text-align: center;
 }
 
 ul {

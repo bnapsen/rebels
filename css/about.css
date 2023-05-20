@@ -12,7 +12,7 @@ div#textsec {
 
     margin: 0 3%;
     
-    width:45%;
+    
     height: 85%;
     left:0;
 
@@ -21,7 +21,6 @@ div#textsec {
     top:50%;
     transform: translateY(-45%);
 
-    background-image: url("../images/rebels_logo_2.png");
     background-size: 90%;
     background-repeat: no-repeat;
     background-blend-mode:overlay;
@@ -34,6 +33,7 @@ div#imagesec {
     right:0;
     top:50%;
 
+    display:none;
     width:50%;
     transform: translateY(-45%);
 }
@@ -62,4 +62,13 @@ div#imagesec {
 }
 #imagesec #subsec img#c {
     bottom:20vh;
+}
+
+@media only screen and (min-width: 1080px) {
+    div#textsec{
+        width:45%;
+    }
+    div#imagesec {
+        display:block;
+    }
 }
