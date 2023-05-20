@@ -56,6 +56,7 @@ br#extrastart {
 header {
     background-color: var(--frame-outline);
     height: 7vh;
+    width:100vw;
     text-align: center;
 }
 header nav {
