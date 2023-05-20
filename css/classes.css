@@ -1,7 +1,7 @@
 body {
-    overflow-y: visible;
 }
 main {
     position: relative;
     width:auto;
+    overflow-y: visible;
 }
